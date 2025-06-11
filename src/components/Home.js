@@ -259,24 +259,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Instagram Embed Section */}
-      <section className="instagram-embed-section py-5" style={{background: '#0a1833'}}>
-        <div className="container d-flex flex-column align-items-center justify-content-center">
-          <h2 className="mb-4" style={{color:'#fff', fontWeight:700}}>Follow Us on Instagram</h2>
-          <div style={{width:'100%', maxWidth:'540px', borderRadius:'18px', overflow:'hidden', boxShadow:'0 4px 24px rgba(0,0,0,0.13)'}}>
-            <iframe
-              src="https://www.instagram.com/sri_krishna_vilas_frisco/embed/"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              scrolling="no"
-              allowtransparency="true"
-              title="Instagram Feed"
-              style={{border:'none', width:'100%', minHeight:'600px', background:'#fff'}}
-            ></iframe>
-          </div>
-        </div>
-      </section>
 
       {/* Menu Slider Section */}
       <section id="menu" className="menu-slider-section py-5" style={{background: '#0a1833', color: '#fff', position: 'relative'}}>
