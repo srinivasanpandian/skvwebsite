@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { InstagramEmbed } from 'react-social-media-embed';
+import React, { useState } from 'react';
+
 import './Home.css'; // For custom styles, create this file as needed
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footer from './Footer';
@@ -14,19 +14,9 @@ const menuItems = [
   { title: 'Uthappam', img: '/img/menu6.png' },
 ];
 
-// Instagram post URLs (replace with your real post URLs)
-const instaPosts = [
-  'https://www.instagram.com/p/DKiBYCUzGkE/',
-  'https://www.instagram.com/p/DKK1HmcBs9L/',
-  'https://www.instagram.com/p/C7QwQk6yQwF/',
-  'https://www.instagram.com/p/C7QwQk6yQwF/',
-  'https://www.instagram.com/p/C7QwQk6yQwF/'
-];
-
 function Home() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [menuIndex, setMenuIndex] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(3);
 
   // Review slider state
   const reviews = [
@@ -63,7 +53,6 @@ function Home() {
   const handleHamburgerClick = () => setMobileNavOpen(!mobileNavOpen);
   const handleNavLinkClick = () => setMobileNavOpen(false);
 
-
   return (
     <div>
       {/* Hero Section */}
@@ -85,7 +74,7 @@ function Home() {
           </div>
           <nav className="header-nav">
             <ul className="nav nav-pills justify-content-center">
-              <li className="nav-item"><a className="nav-link active" href="#" onClick={handleNavLinkClick}>Home</a></li>
+              <li className="nav-item"><a className="nav-link active" href="/" onClick={handleNavLinkClick}>Home</a></li>
               <li className="nav-item"><a className="nav-link" href="#about" onClick={handleNavLinkClick}>About Us</a></li>
               <li className="nav-item"><a className="nav-link" href="#menu" onClick={handleNavLinkClick}>Menu</a></li>
               <li className="nav-item"><a className="nav-link" href="#catering" onClick={handleNavLinkClick}>Catering</a></li>
@@ -102,7 +91,7 @@ function Home() {
         </div>
         <div className={`mobile-nav${mobileNavOpen ? ' open' : ''}`}>
           <ul className="nav flex-column align-items-center">
-            <li className="nav-item"><a className="nav-link" href="#" onClick={handleNavLinkClick}>Home</a></li>
+            <li className="nav-item"><a className="nav-link" href="/" onClick={handleNavLinkClick}>Home</a></li>
             <li className="nav-item"><a className="nav-link" href="#about" onClick={handleNavLinkClick}>About Us</a></li>
             <li className="nav-item"><a className="nav-link" href="#menu" onClick={handleNavLinkClick}>Menu</a></li>
             <li className="nav-item"><a className="nav-link" href="#catering" onClick={handleNavLinkClick}>Catering</a></li>
@@ -267,11 +256,11 @@ function Home() {
             <h2 className="fw-bold mb-0 me-3" style={{color: '#FFC107'}}>Our Menu</h2>
             <div className="menu-slider-arrows d-flex align-items-center">
               <button className="menu-arrow" onClick={() => setMenuIndex(i => Math.max(i - 1, 0))}>&lt;</button>
-              <button className="menu-arrow" onClick={() => setMenuIndex(i => Math.min(i + 1, menuItems.length - visibleCount))}>&gt;</button>
+              <button className="menu-arrow" onClick={() => setMenuIndex(i => Math.min(i + 1, menuItems.length - 1))}>&gt;</button>
             </div>
           </div>
           <div className="menu-slider-wrapper">
-            <div className="menu-slider-track" style={{transform: `translateX(-${menuIndex * (100 / visibleCount)}%)`}}>
+            <div className="menu-slider-track" style={{transform: `translateX(-${menuIndex * (100 / menuItems.length)}%)`}}>
               {menuItems.map((item, idx) => (
                 <div className="menu-slider-card" key={item.title}>
                   <div className="menu-slider-img-wrap">

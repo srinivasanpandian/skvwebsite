@@ -12,26 +12,26 @@ function Footer() {
             <p className="footer-about mt-3" style={{maxWidth:320, color:'#bdbdbd', fontSize:'1rem'}}>Rooted in divine heritage and inspired by Krishna's favorite delicacies, we bring you a sattvic feast full of purity, tradition, and taste.</p>
             <div className="footer-social mt-3">
               <span style={{fontWeight:600}}>Connect With Us</span>
-              <a href="#" className="ms-3 me-2"><img src="/img/facebook.png" alt="Facebook" style={{width:28, height:28}} /></a>
-              <a href="#" className="me-2"><img src="/img/instagram-icon.png" alt="Instagram" style={{width:28, height:28}} /></a>
-              <a href="#"><img src="/img/google.png" alt="Google" style={{width:28, height:28}} /></a>
+              <a href="/" className="ms-3 me-2"><img src="/img/facebook.png" alt="Facebook" style={{width:28, height:28}} /></a>
+              <a href="/" className="me-2"><img src="/img/instagram-icon.png" alt="Instagram" style={{width:28, height:28}} /></a>
+              <a href="/" ><img src="/img/google.png" alt="Google" style={{width:28, height:28}} /></a>
             </div>
           </div>
           {/* Menu & Help */}
           <div className="col-md-2 mb-4 mb-md-0">
             <h5 className="footer-heading mb-3" style={{color:'#FFC107', fontWeight:700, borderBottom:'2px solid #FFC107', display:'inline-block', paddingBottom:2}}>Menu</h5>
             <ul className="footer-list list-unstyled mt-3">
-              <li><a href="#" className="footer-link">Home</a></li>
-              <li><a href="#menu" className="footer-link">Food Menu</a></li>
-              <li><a href="#catering" className="footer-link">Catering Menu</a></li>
-              <li><a href="#franchise" className="footer-link">Franchise</a></li>
-              <li><a href="#locations" className="footer-link">Locations</a></li>
+              <li><a href="/" className="footer-link">Home</a></li>
+              <li><a href="/menu" className="footer-link">Food Menu</a></li>
+              <li><a href="/catering" className="footer-link">Catering Menu</a></li>
+              <li><a href="/franchise" className="footer-link">Franchise</a></li>
+              <li><a href="/locations" className="footer-link">Locations</a></li>
             </ul>
           </div>
           <div className="col-md-2 mb-4 mb-md-0">
             <h5 className="footer-heading mb-3" style={{color:'#FFC107', fontWeight:700, borderBottom:'2px solid #FFC107', display:'inline-block', paddingBottom:2}}>Help</h5>
             <ul className="footer-list list-unstyled mt-3">
-              <li><a href="#contact" className="footer-link">Contact Us</a></li>
+              <li><a href="/contact" className="footer-link">Contact Us</a></li>
             </ul>
           </div>
           {/* Newsletter */}
