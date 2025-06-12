@@ -253,7 +253,7 @@ function Home() {
           </div>
           <div className="row align-items-center justify-content-center">
             <div
-              className="col-md-3 text-center mb-4 mb-md-0 about-img-wrapper"
+              className="col-lg-3 col-md-4 col-sm-6 text-center mb-4 mb-lg-0 about-img-wrapper"
               style={{ position: "relative" }}
             >
               <img
@@ -264,7 +264,7 @@ function Home() {
               <img src="/img/about1.jpg" alt="About 1" className="about-img" />
             </div>
             <div
-              className="col-md-3 text-center mb-4 mb-md-0 about-img-wrapper"
+              className="col-lg-3 col-md-4 col-sm-6 text-center mb-4 mb-lg-0 about-img-wrapper"
               style={{ position: "relative" }}
             >
               <img
@@ -274,7 +274,7 @@ function Home() {
               />
               <img src="/img/about2.jpg" alt="About 2" className="about-img" />
             </div>
-            <div className="col-md-6 about-desc">
+            <div className="col-lg-6 col-md-12 about-desc">
               <p>
                 Sri Krishna Vilas is a unique vegetarian restaurant inspired by
                 the divine offerings of Lord Krishna. Every dish is rooted in
