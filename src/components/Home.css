@@ -890,11 +890,16 @@ body,
   width: 180px;
   max-width: 30vw;
 }
+.about-images-container {
+  align-items: center;
+  justify-content: center;
+}
+
 .about-img {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 260px;
+  max-width: 320px;
   aspect-ratio: 1/1.25;
   object-fit: cover;
   border-radius: 40% / 30% !important;
