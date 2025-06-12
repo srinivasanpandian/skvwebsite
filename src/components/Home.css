@@ -446,12 +446,15 @@ body,
   color: #fff;
   padding: 2rem 1.2rem 1rem 1.2rem;
   height: 427px;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   overflow: visible;
   text-align: center;
+  margin: 0 auto;
 }
 .feature-icon {
   position: relative;
