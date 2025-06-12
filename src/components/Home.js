@@ -495,24 +495,26 @@ function Home() {
         style={{ background: "#0a1833", color: "#fff", position: "relative" }}
       >
         <div className="container-fluid position-relative">
-          <div className="d-flex align-items-center mb-4 menu-header-row">
+          <div className="d-flex align-items-center justify-content-between mb-4 menu-header-row flex-wrap">
             <h2 className="fw-bold mb-0 me-3" style={{ color: "#FFC107" }}>
               Our Menu
             </h2>
-            <div className="menu-slider-arrows d-flex align-items-center">
+            <div className="menu-slider-arrows d-flex align-items-center d-none d-md-flex">
               <button
                 className="menu-arrow"
                 onClick={() => setMenuIndex((i) => Math.max(i - 1, 0))}
+                disabled={menuIndex === 0}
               >
-                &lt;
+                <i className="bi bi-chevron-left"></i>
               </button>
               <button
                 className="menu-arrow"
                 onClick={() =>
                   setMenuIndex((i) => Math.min(i + 1, menuItems.length - 1))
                 }
+                disabled={menuIndex === menuItems.length - 1}
               >
-                &gt;
+                <i className="bi bi-chevron-right"></i>
               </button>
             </div>
           </div>
