@@ -1,9 +1,16 @@
 /* Home.css - Custom styles for Sri Krishna Vilas Home page */
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap");
 
-body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-subtitle, .nav, .btn {
-  font-family: 'Instrument Sans', Arial, sans-serif !important;
+body,
+.hero-section,
+.hero-header-row,
+.hero-content-center,
+.hero-title,
+.hero-subtitle,
+.nav,
+.btn {
+  font-family: "Instrument Sans", Arial, sans-serif !important;
 }
 
 .hero-section {
@@ -17,8 +24,11 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 }
 .hero-bg {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: url('../img/hero-bg.jpg') center center/cover no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/hero-bg.jpg") center center/cover no-repeat;
   z-index: 1;
 }
 .overlay {
@@ -92,8 +102,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 }
 .nav-pills .nav-link.active {
   background: none;
-  color: #FFC107;
-  border-bottom: 2px solid #FFC107;
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -104,17 +114,17 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   padding: 0.5rem 0;
 }
 .hero-title {
-  color: #FFC107;
+  color: #ffc107;
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 0.5rem;
 }
 .hero-subtitle {
   color: #fff;
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 .hero-menu-btn {
   font-weight: 500;
@@ -130,30 +140,35 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   margin: 0 auto;
   width: fit-content;
   font-size: 2.2rem;
-  color: #FFC107;
+  color: #ffc107;
   animation: bounce 1.5s infinite;
   z-index: 11;
 }
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 /* About section */
 #about h2 {
-  font-family: 'Baloo Bhai 2', cursive;
+  font-family: "Baloo Bhai 2", cursive;
   font-size: 2.5rem;
 }
 #about img {
   border-radius: 30%;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* Stats section */
 .stats-section {
   background: #0a1833;
-  color: #FFC107;
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  color: #ffc107;
+  font-family: "Instrument Sans", Arial, sans-serif;
   padding: 2.5rem 0;
 }
 .stats-row {
@@ -179,7 +194,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   margin-bottom: 0;
 }
 .stats-label {
-  color: #FFC107;
+  color: #ffc107;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
@@ -263,7 +278,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   margin-bottom: 0.5rem;
 }
 .stats-label {
-  color: #FFC107;
+  color: #ffc107;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
@@ -310,7 +325,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 .features-section {
   background: #0a1833;
   color: #fff;
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
 }
 /* .feature-card {
   background-image: url('../img/feature-bg.png')  ;
@@ -328,22 +343,22 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   justify-content: flex-start;
   overflow: visible;
   text-align: center;
- 
+
 } */
 .feature-card {
-    background-image: url('../img/feature-bg.png');
-    background-repeat: no-repeat;
-    border-radius: 0;
-    background-size: cover;
-    color: #fff;
-    padding: 2rem 1.2rem 1rem 1.2rem;
-    height: 427px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    overflow: visible;
-    text-align: center;
+  background-image: url("../img/feature-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 0;
+  background-size: cover;
+  color: #fff;
+  padding: 2rem 1.2rem 1rem 1.2rem;
+  height: 427px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  text-align: center;
 }
 .feature-icon {
   position: relative;
@@ -366,7 +381,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #FFC107;
+  color: #ffc107;
   font-size: 0.85rem;
   margin-bottom: 0;
 }
@@ -439,7 +454,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   background: #fff;
   color: #0a1833;
   border: none;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 #menu .card-title {
   font-weight: 600;
@@ -495,42 +510,121 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 }
 .hamburger {
   display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.2s;
 }
+.hamburger:hover {
+  color: #ffc107;
+}
+
 .mobile-nav {
   display: none;
-  position: absolute;
-  top: 60px;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100vw;
-  background: rgba(10,24,51,0.98);
-  z-index: 100;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem 0;
+  height: 100vh;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 }
+
 .mobile-nav.open {
   display: flex;
+  opacity: 1;
+  visibility: visible;
 }
+
+.mobile-nav-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.mobile-nav-content {
+  position: relative;
+  background: rgba(10, 24, 51, 0.98);
+  backdrop-filter: blur(10px);
+  width: 280px;
+  height: 100%;
+  margin-left: auto;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav.open .mobile-nav-content {
+  transform: translateX(0);
+}
+
 .mobile-nav .nav-link {
   color: #fff;
-  font-size: 1.2rem;
-  margin: 0.7rem 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-nav .nav-link:hover,
+.mobile-nav .nav-link.active {
+  color: #ffc107;
+  background: rgba(255, 193, 7, 0.1);
+}
+
+.mobile-nav .franchise-mobile {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.mobile-nav .franchise-link {
+  background: #ffc107;
+  color: #0a1833;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.mobile-nav .franchise-link:hover {
+  background: #e0a800;
+  color: #0a1833;
 }
 
 .about-section {
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
   background: #0a1833;
   color: #fff;
 }
 .about-subheading {
-  color: #FFC107;
+  color: #ffc107;
   letter-spacing: 2px;
   font-weight: 700;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 .about-heading {
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
   font-size: 2.7rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -568,12 +662,12 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   aspect-ratio: 1/1.25;
   object-fit: cover;
   border-radius: 40% / 30% !important;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   display: block;
 }
 .about-desc p:first-child {
-  color: #FFC107;
+  color: #ffc107;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
@@ -606,7 +700,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   }
 }
 
-.about-section .container, .about-section .row {
+.about-section .container,
+.about-section .row {
   position: relative;
   z-index: 2;
 }
@@ -622,7 +717,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   .about-img {
     max-width: 180px;
   }
-  .about-pattern1, .about-pattern2 {
+  .about-pattern1,
+  .about-pattern2 {
     width: 100px;
     max-width: 40vw;
     left: -20px;
@@ -647,7 +743,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   .about-img {
     max-width: 120px;
   }
-  .about-pattern1, .about-pattern2 {
+  .about-pattern1,
+  .about-pattern2 {
     display: none !important;
   }
   .about-desc {
@@ -660,7 +757,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 .menu-slider-section {
   background: #0a1833;
   color: #fff;
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
   position: relative;
   overflow-x: hidden;
 }
@@ -671,7 +768,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 }
 .menu-slider-track {
   display: flex;
-  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   will-change: transform;
   width: 80%;
 }
@@ -687,7 +784,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 2;
 }
@@ -723,7 +820,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   text-align: center;
 }
 .menu-arrow {
-  background: #FFC107;
+  background: #ffc107;
   border: none;
   color: #0a1833;
   font-size: 1.5rem;
@@ -737,7 +834,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   justify-content: center;
   transition: background 0.2s;
 }
-.menu-arrow:active, .menu-arrow:focus {
+.menu-arrow:active,
+.menu-arrow:focus {
   background: #e0a800;
 }
 .menu-slider-krishna {
@@ -822,7 +920,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 .insta-section {
   background: #0a1833;
   color: #fff;
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
 }
 .insta-header {
   display: flex;
@@ -836,7 +934,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   margin-bottom: 0.5rem;
 }
 .insta-handle {
-  color: #FFC107;
+  color: #ffc107;
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -857,7 +955,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   background: #fff;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   width: 210px;
   height: 210px;
   display: flex;
@@ -876,7 +974,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   font-size: 1.1rem;
   border-radius: 24px;
   padding: 0.7rem 2.2rem;
-  background: #FFC107;
+  background: #ffc107;
   color: #0a1833;
   border: none;
   transition: background 0.2s;
@@ -934,16 +1032,16 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 .review-section {
   background: #0a1833;
   color: #fff;
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
 }
 .review-header .review-subtitle {
-  color: #FFC107;
+  color: #ffc107;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 1.1rem;
 }
 .review-header .review-title {
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
   font-size: 2.3rem;
   font-weight: 700;
   color: #fff;
@@ -954,13 +1052,13 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   margin-bottom: 1.5rem;
 }
 .review-card {
-  border: 2px solid #FFC107;
+  border: 2px solid #ffc107;
   border-radius: 18px;
-  background: rgba(10,24,51,0.95);
+  background: rgba(10, 24, 51, 0.95);
   min-height: 180px;
   position: relative;
   z-index: 2;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 340px;
   margin: 0 auto;
@@ -976,13 +1074,13 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   height: 110px;
   border-radius: 18px;
   object-fit: cover;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
   z-index: 3;
-  border: 6px solid #FFC107;
+  border: 6px solid #ffc107;
   background: #fff;
 }
 .review-text {
-  color: #FFC107;
+  color: #ffc107;
   font-size: 1.05rem;
   margin-bottom: 1.2rem;
 }
@@ -998,7 +1096,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #FFC107;
+  background: #ffc107;
   display: inline-block;
 }
 .review-dots span:not(:first-child) {
@@ -1049,12 +1147,12 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 .footer-section {
   background: #0a1833;
   color: #fff;
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
   position: relative;
   z-index: 2;
 }
 .footer-heading {
-  font-family: 'Baloo Bhai 2', cursive, Arial, sans-serif;
+  font-family: "Baloo Bhai 2", cursive, Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
@@ -1064,11 +1162,11 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   padding-bottom: 0.2rem;
 }
 .footer-heading::after {
-  content: '';
+  content: "";
   display: block;
   width: 80%;
   height: 5px;
-  background: #FFC107;
+  background: #ffc107;
   border-radius: 2px;
   margin-top: 2px;
   position: absolute;
@@ -1090,17 +1188,18 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   transition: color 0.2s;
 }
 .footer-link:hover {
-  color: #FFC107;
+  color: #ffc107;
 }
 .footer-link::before {
-  content: '\203A'; /* Unicode for single right chevron */
-  color: #FFC107;
+  content: "\203A"; /* Unicode for single right chevron */
+  color: #ffc107;
   font-size: 1.2rem;
   margin-right: 0.7rem;
   font-weight: 700;
   display: inline-block;
 }
-.footer-newsletter input[type="email"], .footer-newsletter .form-control {
+.footer-newsletter input[type="email"],
+.footer-newsletter .form-control {
   border-radius: 10px;
   background: #fff;
   color: #0a1833;
@@ -1109,33 +1208,42 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   font-size: 1.1rem;
   padding: 0.8rem 1.2rem;
   margin-bottom: 0.7rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .footer-newsletter input[type="email"]::placeholder {
   color: #bdbdbd;
   opacity: 1;
 }
-.footer-newsletter button, .footer-newsletter .btn-danger {
+.footer-newsletter button,
+.footer-newsletter .btn-danger {
   border-radius: 30px 12px 30px 12px / 30px 12px 30px 12px;
   font-weight: 700;
   font-size: 1.25rem;
-  background: #FF3864;
+  background: #ff3864;
   color: #fff;
-  border: 3px solid #FF3864;
-  border-right: 3px solid #FFC107;
-  border-bottom: 3px solid #FFC107;
+  border: 3px solid #ff3864;
+  border-right: 3px solid #ffc107;
+  border-bottom: 3px solid #ffc107;
   padding: 0.7rem 2.5rem;
-  box-shadow: 2px 2px 0 #FFC107, 0 2px 8px rgba(0,0,0,0.10);
+  box-shadow:
+    2px 2px 0 #ffc107,
+    0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s;
   outline: none;
   text-align: center;
   display: inline-block;
 }
-.footer-newsletter button:hover, .footer-newsletter .btn-danger:hover {
+.footer-newsletter button:hover,
+.footer-newsletter .btn-danger:hover {
   background: #e02e54;
   color: #fff;
-  box-shadow: 4px 4px 0 #FFC107, 0 4px 16px rgba(0,0,0,0.13);
+  box-shadow:
+    4px 4px 0 #ffc107,
+    0 4px 16px rgba(0, 0, 0, 0.13);
 }
 @media (max-width: 900px) {
   .footer-heading {
@@ -1149,18 +1257,20 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   .footer-link {
     font-size: 1rem;
   }
-  .footer-newsletter input[type="email"], .footer-newsletter .form-control {
+  .footer-newsletter input[type="email"],
+  .footer-newsletter .form-control {
     font-size: 0.98rem;
     padding: 0.6rem 0.7rem;
   }
-  .footer-newsletter button, .footer-newsletter .btn-danger {
+  .footer-newsletter button,
+  .footer-newsletter .btn-danger {
     font-size: 0.98rem;
     padding: 0.5rem 1.2rem;
   }
 }
 
 .footer-popular-heading {
-  font-family: 'Baloo Bhai 2', cursive, Arial, sans-serif;
+  font-family: "Baloo Bhai 2", cursive, Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
@@ -1202,12 +1312,12 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 .review2-section {
   background: #06142b;
   color: #fff;
-  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-family: "Instrument Sans", Arial, sans-serif;
   position: relative;
   overflow: hidden;
 }
 .review2-section h2 {
-  font-family: 'Baloo Bhai 2', cursive, Arial, sans-serif;
+  font-family: "Baloo Bhai 2", cursive, Arial, sans-serif;
   font-size: 3.2rem;
   font-weight: 800;
   color: #fff;
@@ -1215,13 +1325,13 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   line-height: 1.1;
 }
 .review2-section .mb-2 {
-  color: #FFC107;
+  color: #ffc107;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 1.1rem;
 }
 .review2-card {
-  border: 5px solid #FFC107;
+  border: 5px solid #ffc107;
   border-radius: 24px;
   background: transparent;
   min-height: 260px;
@@ -1234,7 +1344,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   justify-content: flex-start;
 }
 .review2-text {
-  color: #FFC107;
+  color: #ffc107;
   font-size: 1.45rem;
   font-weight: 500;
   margin-bottom: 2.2rem;
@@ -1243,7 +1353,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
 .review2-name {
   color: #fff;
   font-size: 1.3rem;
-  font-family: 'Baloo Bhai 2', cursive, Arial, sans-serif;
+  font-family: "Baloo Bhai 2", cursive, Arial, sans-serif;
   font-weight: 700;
   z-index: 2;
 }
@@ -1253,7 +1363,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   bottom: 24px;
   width: 60px;
   height: 60px;
-  background: #FFC107;
+  background: #ffc107;
   border-radius: 50%;
   z-index: 1;
 }
@@ -1261,7 +1371,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #FFC107;
+  background: #ffc107;
   display: inline-block;
 }
 .review2-dots span:not(:first-child) {
@@ -1281,7 +1391,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   height: 220px;
   object-fit: cover;
   border-radius: 32px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
   background: #fff;
 }
 .review2-img-center {
@@ -1297,7 +1407,7 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   left: 0;
   width: 100%;
   height: 100%;
-  background: #FFC107;
+  background: #ffc107;
   opacity: 0.7;
   border-radius: 32px;
   z-index: 2;
@@ -1306,7 +1416,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   .review2-section h2 {
     font-size: 2.1rem;
   }
-  .review2-img, .review2-img-center {
+  .review2-img,
+  .review2-img-center {
     width: 180px;
     height: 120px;
     border-radius: 18px;
@@ -1320,7 +1431,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   .review2-section h2 {
     font-size: 1.5rem;
   }
-  .review2-img, .review2-img-center {
+  .review2-img,
+  .review2-img-center {
     width: 120px;
     height: 90px;
     border-radius: 12px;
@@ -1340,7 +1452,8 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   .review2-section h2 {
     font-size: 1.1rem;
   }
-  .review2-img, .review2-img-center {
+  .review2-img,
+  .review2-img-center {
     width: 90vw;
     height: 40vw;
     min-width: 120px;
@@ -1357,4 +1470,4 @@ body, .hero-section, .hero-header-row, .hero-content-center, .hero-title, .hero-
   .review2-img-col {
     min-height: 100px;
   }
-} 
+}
