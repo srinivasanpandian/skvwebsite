@@ -252,29 +252,41 @@ function Home() {
             </h2>
           </div>
           <div className="row align-items-center justify-content-center">
-            <div
-              className="col-lg-3 col-md-4 col-sm-6 text-center mb-4 mb-lg-0 about-img-wrapper"
-              style={{ position: "relative" }}
-            >
-              <img
-                src="/img/pattern1.png"
-                alt="Pattern 1"
-                className="about-pattern about-pattern1"
-              />
-              <img src="/img/about1.jpg" alt="About 1" className="about-img" />
+            <div className="col-lg-5 col-md-6 d-flex justify-content-center mb-4 mb-lg-0">
+              <div className="about-images-container d-flex gap-4">
+                <div
+                  className="text-center about-img-wrapper"
+                  style={{ position: "relative" }}
+                >
+                  <img
+                    src="/img/pattern1.png"
+                    alt="Pattern 1"
+                    className="about-pattern about-pattern1"
+                  />
+                  <img
+                    src="/img/about1.jpg"
+                    alt="About 1"
+                    className="about-img"
+                  />
+                </div>
+                <div
+                  className="text-center about-img-wrapper"
+                  style={{ position: "relative" }}
+                >
+                  <img
+                    src="/img/pattern2.png"
+                    alt="Pattern 2"
+                    className="about-pattern about-pattern2"
+                  />
+                  <img
+                    src="/img/about2.jpg"
+                    alt="About 2"
+                    className="about-img"
+                  />
+                </div>
+              </div>
             </div>
-            <div
-              className="col-lg-3 col-md-4 col-sm-6 text-center mb-4 mb-lg-0 about-img-wrapper"
-              style={{ position: "relative" }}
-            >
-              <img
-                src="/img/pattern2.png"
-                alt="Pattern 2"
-                className="about-pattern about-pattern2"
-              />
-              <img src="/img/about2.jpg" alt="About 2" className="about-img" />
-            </div>
-            <div className="col-lg-6 col-md-12 about-desc">
+            <div className="col-lg-7 col-md-12 about-desc">
               <p>
                 Sri Krishna Vilas is a unique vegetarian restaurant inspired by
                 the divine offerings of Lord Krishna. Every dish is rooted in
