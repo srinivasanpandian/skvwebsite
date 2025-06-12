@@ -349,10 +349,9 @@ function Home() {
         style={{ background: "#0a1833", color: "#fff" }}
       >
         <div className="container">
-          <div className="row text-center justify-content-center ">
-            <div className="col-md-4 mb-4">
-              <div className="feature-card">
-                {/* <img src="/img/feature-bg.png" alt="Flower Pattern" className="feature-bg" /> */}
+          <div className="row text-center justify-content-center g-4">
+            <div className="col-xl-4 col-lg-6 col-md-8 col-sm-10 mb-4">
+              <div className="feature-card h-100">
                 <img
                   src="/img/feature1.png"
                   alt="Sattvic & Healthy"
@@ -367,9 +366,8 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
-              <div className="feature-card">
-                {/* <img src="/img/feature-bg.png" alt="Flower Pattern" className="feature-bg" /> */}
+            <div className="col-xl-4 col-lg-6 col-md-8 col-sm-10 mb-4">
+              <div className="feature-card h-100">
                 <img
                   src="/img/feature2.png"
                   alt="Authentic Taste"
@@ -383,9 +381,8 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
-              <div className="feature-card">
-                {/* <img src="/img/feature-bg.png" alt="Flower Pattern" className="feature-bg" /> */}
+            <div className="col-xl-4 col-lg-6 col-md-8 col-sm-10 mb-4">
+              <div className="feature-card h-100">
                 <img
                   src="/img/feature3.png"
                   alt="Temple-Inspired Ambience"
