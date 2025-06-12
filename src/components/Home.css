@@ -442,14 +442,13 @@ body,
   background-image: url("../img/feature-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: 100% 100%;
   border-radius: 0;
   color: #fff;
-  padding: 3rem 1.5rem 2rem 1.5rem;
-  min-height: 450px;
-  height: auto;
+  padding: 4rem 2rem 3rem 2rem;
+  height: 500px;
   width: 100%;
-  max-width: 420px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
