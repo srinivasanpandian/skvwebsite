@@ -441,13 +441,15 @@ body,
 .feature-card {
   background-image: url("../img/feature-bg.png");
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
   border-radius: 0;
-  background-size: cover;
   color: #fff;
-  padding: 2rem 1.2rem 1rem 1.2rem;
-  height: 427px;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  min-height: 450px;
+  height: auto;
   width: 100%;
-  max-width: 100%;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -455,6 +457,7 @@ body,
   overflow: visible;
   text-align: center;
   margin: 0 auto;
+  position: relative;
 }
 .feature-icon {
   position: relative;
