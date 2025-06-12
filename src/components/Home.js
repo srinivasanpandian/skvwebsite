@@ -144,54 +144,68 @@ function Home() {
           </div>
         </div>
         <div className={`mobile-nav${mobileNavOpen ? " open" : ""}`}>
-          <ul className="nav flex-column align-items-center">
-            <li className="nav-item">
-              <a className="nav-link" href="/" onClick={handleNavLinkClick}>
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#about"
-                onClick={handleNavLinkClick}
-              >
-                About Us
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#menu" onClick={handleNavLinkClick}>
-                Menu
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#catering"
-                onClick={handleNavLinkClick}
-              >
-                Catering
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#contact"
-                onClick={handleNavLinkClick}
-              >
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#franchise"
-                onClick={handleNavLinkClick}
-              >
-                <i className="bi bi-shop me-2"></i>Get Franchise
-              </a>
-            </li>
-          </ul>
+          <div
+            className="mobile-nav-overlay"
+            onClick={handleNavLinkClick}
+          ></div>
+          <div className="mobile-nav-content">
+            <ul className="nav flex-column align-items-center">
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  href="/"
+                  onClick={handleNavLinkClick}
+                >
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#about"
+                  onClick={handleNavLinkClick}
+                >
+                  About Us
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#menu"
+                  onClick={handleNavLinkClick}
+                >
+                  Menu
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#catering"
+                  onClick={handleNavLinkClick}
+                >
+                  Catering
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#contact"
+                  onClick={handleNavLinkClick}
+                >
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item franchise-mobile">
+                <a
+                  className="nav-link franchise-link"
+                  href="#franchise"
+                  onClick={handleNavLinkClick}
+                >
+                  <i className="bi bi-shop me-2"></i>Get Franchise
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div
           className="container hero-content-center d-flex flex-column justify-content-center align-items-center flex-grow-1"
