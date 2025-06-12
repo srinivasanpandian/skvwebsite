@@ -407,9 +407,9 @@ function Home() {
         style={{ background: "#06142b", color: "#fff" }}
       >
         <div className="container">
-          <div className="row align-items-center justify-content-between flex-wrap">
+          <div className="row align-items-center justify-content-between">
             {/* Left: Text and Testimonial Card */}
-            <div className="col-lg-6 mb-5 mb-lg-0">
+            <div className="col-lg-6 col-md-12 mb-5 mb-lg-0">
               <div
                 className="mb-2"
                 style={{
@@ -421,71 +421,27 @@ function Home() {
               >
                 TESTIMONIALS & REVIEWS
               </div>
-              <h2
-                className="fw-bold mb-4"
-                style={{
-                  fontSize: "3.2rem",
-                  fontFamily: "'Baloo Bhai 2', cursive",
-                  lineHeight: 1.1,
-                }}
-              >
-                Our Customar
-                <br />
+              <h2 className="fw-bold mb-4 review2-title">
+                Our Customer
+                <br className="d-none d-md-block" />
                 Feedbacks
               </h2>
-              <div
-                className="review2-card position-relative p-4"
-                style={{
-                  border: "5px solid #FFC107",
-                  borderRadius: "24px",
-                  background: "transparent",
-                  minHeight: 260,
-                  marginTop: "2.5rem",
-                  marginBottom: "2.5rem",
-                }}
-              >
-                <div
-                  className="review2-text"
-                  style={{
-                    color: "#FFC107",
-                    fontSize: "1.45rem",
-                    fontWeight: 500,
-                    marginBottom: "2.2rem",
-                    lineHeight: 1.4,
-                  }}
-                >
-                  {reviews[reviewIndex].text}
-                </div>
-                <div
-                  className="review2-name fw-bold"
-                  style={{
-                    color: "#fff",
-                    fontSize: "1.3rem",
-                    fontFamily: "'Baloo Bhai 2', cursive",
-                  }}
-                >
+              <div className="review2-card position-relative p-4">
+                <div className="review2-text">{reviews[reviewIndex].text}</div>
+                <div className="review2-name fw-bold">
                   {reviews[reviewIndex].name}
                 </div>
-                <div
-                  className="review2-circle position-absolute"
-                  style={{
-                    right: 32,
-                    bottom: 24,
-                    width: 60,
-                    height: 60,
-                    background: "#FFC107",
-                    borderRadius: "50%",
-                  }}
-                ></div>
+                <div className="review2-circle position-absolute"></div>
               </div>
               {/* Slider dots */}
               <div
-                className="review2-dots d-flex align-items-center mt-4"
+                className="review2-dots d-flex align-items-center justify-content-center justify-content-lg-start mt-4"
                 style={{ gap: "1.1rem" }}
               >
                 {reviews.map((_, idx) => (
                   <span
                     key={idx}
+                    className="review-dot"
                     style={{
                       width: "16px",
                       height: "16px",
@@ -506,69 +462,27 @@ function Home() {
               </div>
             </div>
             {/* Right: Images */}
-            <div
-              className="col-lg-6 d-flex flex-column align-items-center justify-content-center position-relative review2-img-col"
-              style={{ gap: "2.5rem" }}
-            >
-              <img
-                src={reviews[reviewIndex].images[0]}
-                alt="Review Top"
-                className="review2-img mb-4"
-                style={{
-                  width: "270px",
-                  height: "220px",
-                  objectFit: "cover",
-                  borderRadius: "32px",
-                  position: "absolute",
-                  top: 0,
-                  right: 0,
-                  zIndex: 2,
-                }}
-              />
-              <div
-                className="review2-img-center position-relative d-flex align-items-center justify-content-center"
-                style={{ marginTop: "120px", marginBottom: "40px" }}
-              >
+            <div className="col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-center position-relative review2-img-col">
+              <div className="review-images-container position-relative">
                 <img
-                  src={reviews[reviewIndex].images[1]}
-                  alt="Review Center"
-                  style={{
-                    width: "270px",
-                    height: "220px",
-                    objectFit: "cover",
-                    borderRadius: "32px",
-                    zIndex: 1,
-                  }}
+                  src={reviews[reviewIndex].images[0]}
+                  alt="Review Top"
+                  className="review2-img review2-img-top"
                 />
-                <div
-                  className="review2-img-overlay position-absolute"
-                  style={{
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    background: "#FFC107",
-                    opacity: 0.7,
-                    borderRadius: "32px",
-                    zIndex: 2,
-                  }}
-                ></div>
+                <div className="review2-img-center position-relative d-flex align-items-center justify-content-center">
+                  <img
+                    src={reviews[reviewIndex].images[1]}
+                    alt="Review Center"
+                    className="review2-img"
+                  />
+                  <div className="review2-img-overlay position-absolute"></div>
+                </div>
+                <img
+                  src={reviews[reviewIndex].images[2]}
+                  alt="Review Bottom"
+                  className="review2-img review2-img-bottom"
+                />
               </div>
-              <img
-                src={reviews[reviewIndex].images[2]}
-                alt="Review Bottom"
-                className="review2-img"
-                style={{
-                  width: "270px",
-                  height: "220px",
-                  objectFit: "cover",
-                  borderRadius: "32px",
-                  position: "absolute",
-                  bottom: 0,
-                  right: 0,
-                  zIndex: 2,
-                }}
-              />
             </div>
           </div>
         </div>
