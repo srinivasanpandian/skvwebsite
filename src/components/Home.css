@@ -1854,62 +1854,305 @@ body,
   border-radius: 32px;
   z-index: 2;
 }
-@media (max-width: 1100px) {
-  .review2-section h2 {
-    font-size: 2.1rem;
+/* Enhanced responsive review section styles */
+.review2-title {
+  font-size: 3.2rem;
+  font-family: "Baloo Bhai 2", cursive;
+  line-height: 1.1;
+}
+
+.review2-card {
+  border: 5px solid #ffc107;
+  border-radius: 24px;
+  background: transparent;
+  min-height: 260px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.review2-text {
+  color: #ffc107;
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+  line-height: 1.4;
+}
+
+.review2-name {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: 700;
+}
+
+.review2-circle {
+  position: absolute;
+  right: 32px;
+  bottom: 24px;
+  width: 60px;
+  height: 60px;
+  background: #ffc107;
+  border-radius: 50%;
+}
+
+.review-images-container {
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.review2-img {
+  width: 270px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+  background: #fff;
+}
+
+.review2-img-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.review2-img-center {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  width: 270px;
+  height: 220px;
+  position: relative;
+}
+
+.review2-img-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.review2-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffc107;
+  opacity: 0.7;
+  border-radius: 32px;
+  z-index: 2;
+}
+
+@media (max-width: 1199px) {
+  .review2-title {
+    font-size: 2.8rem;
+  }
+  .review2-text {
+    font-size: 1.3rem;
+  }
+  .review2-name {
+    font-size: 1.2rem;
+  }
+  .review2-img,
+  .review2-img-center {
+    width: 240px;
+    height: 200px;
+  }
+  .review-images-container {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 991px) {
+  .review2-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .review2-section .mb-2 {
+    text-align: center;
+  }
+  .review2-text {
+    font-size: 1.2rem;
+  }
+  .review2-name {
+    font-size: 1.1rem;
+  }
+  .review2-img,
+  .review2-img-center {
+    width: 220px;
+    height: 180px;
+    border-radius: 24px;
+  }
+  .review2-img-overlay {
+    border-radius: 24px;
+  }
+  .review-images-container {
+    min-height: 420px;
+    margin-top: 2rem;
+  }
+  .review2-img-center {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review2-title {
+    font-size: 2.2rem;
+  }
+  .review2-card {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.8rem 1.5rem;
+    min-height: 220px;
+  }
+  .review2-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+  }
+  .review2-name {
+    font-size: 1rem;
+  }
+  .review2-circle {
+    width: 50px;
+    height: 50px;
+    right: 24px;
+    bottom: 20px;
   }
   .review2-img,
   .review2-img-center {
     width: 180px;
-    height: 120px;
-    border-radius: 18px;
+    height: 140px;
+    border-radius: 20px;
+  }
+  .review2-img-overlay {
+    border-radius: 20px;
+  }
+  .review-images-container {
+    min-height: 320px;
   }
   .review2-img-center {
-    margin-top: 60px;
+    margin-top: 70px;
     margin-bottom: 20px;
   }
 }
-@media (max-width: 900px) {
-  .review2-section h2 {
-    font-size: 1.5rem;
+
+@media (max-width: 576px) {
+  .review2-title {
+    font-size: 1.8rem;
+  }
+  .review2-card {
+    padding: 1.5rem 1.2rem;
+    min-height: 200px;
+  }
+  .review2-text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .review2-name {
+    font-size: 0.95rem;
+  }
+  .review2-circle {
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 16px;
+  }
+  .review-images-container {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .review2-img,
+  .review2-img-center {
+    width: 160px;
+    height: 120px;
+    border-radius: 16px;
+    position: relative;
+  }
+  .review2-img-overlay {
+    border-radius: 16px;
+  }
+  .review2-img-top,
+  .review2-img-bottom {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+  }
+  .review2-img-center {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .review2-title {
+    font-size: 1.6rem;
+  }
+  .review2-card {
+    padding: 1.2rem 1rem;
+    min-height: 180px;
+  }
+  .review2-text {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+  .review2-name {
+    font-size: 0.9rem;
+  }
+  .review2-img,
+  .review2-img-center {
+    width: 140px;
+    height: 100px;
+    border-radius: 12px;
+  }
+  .review2-img-overlay {
+    border-radius: 12px;
+  }
+  .review-images-container {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 375px) {
+  .review2-title {
+    font-size: 1.4rem;
+  }
+  .review2-card {
+    padding: 1rem 0.8rem;
+    min-height: 160px;
+  }
+  .review2-text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .review2-name {
+    font-size: 0.85rem;
+  }
+  .review2-circle {
+    width: 35px;
+    height: 35px;
+    right: 16px;
+    bottom: 12px;
   }
   .review2-img,
   .review2-img-center {
     width: 120px;
     height: 90px;
-    border-radius: 12px;
-  }
-  .review2-img-center {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  .review2-card {
-    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
-  }
-  .review2-img-col {
-    min-height: 200px;
-  }
-}
-@media (max-width: 600px) {
-  .review2-section h2 {
-    font-size: 1.1rem;
-  }
-  .review2-img,
-  .review2-img-center {
-    width: 90vw;
-    height: 40vw;
-    min-width: 120px;
-    min-height: 60px;
     border-radius: 10px;
   }
-  .review2-img-center {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .review2-img-overlay {
+    border-radius: 10px;
   }
-  .review2-card {
-    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
-  }
-  .review2-img-col {
-    min-height: 100px;
+  .review-images-container {
+    min-height: 200px;
   }
 }
