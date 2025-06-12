@@ -84,7 +84,7 @@ function Home() {
               className="skv-logo"
             />
           </div>
-          <nav className="header-nav">
+          <nav className="header-nav d-none d-lg-flex">
             <ul className="nav nav-pills justify-content-center">
               <li className="nav-item">
                 <a
@@ -133,10 +133,10 @@ function Home() {
               </li>
             </ul>
           </nav>
-          <div className="hamburger" onClick={handleHamburgerClick}>
-            <i className="bi bi-list"></i>
+          <div className="hamburger d-lg-none" onClick={handleHamburgerClick}>
+            <i className={`bi ${mobileNavOpen ? "bi-x" : "bi-list"}`}></i>
           </div>
-          <div className="franchise-btn d-none d-sm-flex">
+          <div className="franchise-btn d-none d-xl-flex">
             <i className="bi bi-shop me-2"></i>
             <a href="#franchise" className="btn btn-outline-light">
               Get Franchise
